@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Restaurant & Lounge</title>
+  </head>
+  <body class="container">
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-10">
+          <h1 class="logo">Restaurant & Lounge</h1>
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btn-light" id="carrito"><img src="./img/carrito.png" alt="Carrito de compras" class="w-25 m-1 inline">0 items</button>
+        </div>
+      </div>
+    </header>
+    <hr>
+    <div class="col"><img src="/img/banner.png" alt="Banner de hamburguesa" class="img-fluid centering w-100"></div>
+    <hr>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" id="burgers">Burgers</a>
+        <a class="nav-item nav-link" id="tacos">Tacos</a>
+        <a class="nav-item nav-link" id="salads">Salads</a>
+        <a class="nav-item nav-link" id="desserts">Desserts</a>
+        <a class="nav-item nav-link" id="drinks&sides">Drinks & Sides</a>
+      </div>
+    </nav>
+    <hr>
+    <main class="container">
+      <h2 class="text-center" id="categoria">Burgers</h2>
+      <hr>
+      <div id="productos" class="row row-cols-4">
+        
+      </div>
+    </main>
+    <footer>
+      <p class="text-center">Contact us: +57 3102105253 - info@restaurant.com - @restaurant</p>
+    </footer>
+    <div class="modal fade" id="cancelModel" tabindex="-1" aria-labelledby="cancelLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cancelLabel">Cancel the order</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Are you sure about cancelling the order
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark confirm" data-bs-dismiss="modal" id="cancel">Yes, I want to cancel the order</button>
+            <button type="button" class="btn btn-outline-dark cancel" data-bs-dismiss="modal">No, I want to continue adding products</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

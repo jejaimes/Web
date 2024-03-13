@@ -1,0 +1,32 @@
+* {
+    color: #323337;
+    text-align: center;
+    font-weight: bold;
+}
+header,footer {
+    background-color: #5E493A;
+    color: white;
+}
+.leftm {
+    background-color: #F28705;
+}
+.topm {
+    background-color: #BF877A;
+}
+.photo1 {
+    background-color: #D96685;
+}
+.photo2 {
+    background-color: #04ADBF;
+}
+header {
+    padding: 2rem;
+}
+.pad {
+    padding: 3rem;
+}
+@media only screen and (max-width: 767px) {
+    .leftm {
+      display: none;
+    }
+}

@@ -1,0 +1,8 @@
+#encabezado {
+    color: blue;
+    background-color: #fbbbcc;
+}
+
+h2 + p {
+    text-align: center;
+}

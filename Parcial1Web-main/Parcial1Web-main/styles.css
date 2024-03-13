@@ -1,0 +1,23 @@
+.logo {
+  font-family: 'Satisfy', cursive;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#categoria {
+  font-weight: bold;
+}
+
+.inline {
+  display: inline;
+}
+
+.cancel {
+  background-color: #F25260;
+}
+
+.confirm {
+  background-color: #F2E6D8;
+}

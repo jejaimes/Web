@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Web básica</title>
+  </head>
+  <body>
+    <!--Encabezado-->
+    <header>
+      <img src="data/selfie.jpg"
+      alt="Selfie del autor"
+      width="200"
+      height="199">
+      <h1>Página web personal</h1>
+    </header>
+
+    <!--Barra de navegación-->
+    <nav>
+      <ul>
+        <li><a href="#bienvenida">Bienvenida</a></li>
+        <li><a href="#biograficos">Datos biográficos</a></li>
+        <li><a href="#academicos">Datos académicos</a></li>
+        <li><a href="#intereses">Sitios de interés</a></li>
+        <li><a href="#formulario">Formulario de contacto</a></li>
+      </ul>
+    </nav>
+    
+    <!--Contenido-->
+    <main>
+      <section>
+        <h2 id="bienvenida">Bienvenida</h2>
+        <p>Hola y bienvenidos a mi página web personal. Aquí podrán encontrar parte de mi información personal.
+          También hay otras cosas que me gustan. 
+          Si quieren contactarme lo pueden hacer por mis redes sociales o por la sección de contacto.
+        </p>
+        <h3>Morbi facilisis convallis</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Etiam libero lectus, interdum iaculis imperdiet ac, faucibus quis tortor. 
+          Etiam ac neque arcu. Phasellus non tellus vel sem laoreet commodo at in arcu. 
+          Integer euismod, lacus sed congue ultrices, urna lacus viverra magna, nec placerat odio purus laoreet mauris. 
+          Phasellus rhoncus commodo ligula in blandit. 
+          Curabitur lorem mi, venenatis non eros sed, lobortis euismod est. 
+          Etiam in sodales est, in scelerisque libero.
+        </p>
+      </section>
+
+      <section>
+        <h2 id="biograficos">Datos biográficos</h2>
+        <table>
+          <tr>
+            <th>Fecha de nacimiento</th>
+            <td><time datetime="2000-07-03">3 de Julio del 2000</time></td>
+          </tr>
+          <tr>
+            <th>Lugar de nacimiento</th>
+            <td>Cúcuta, Norte de Santander</td>
+          </tr>
+          <tr>
+            <th>Ocupación</th>
+            <td>Estudiante</td>
+          </tr>
+          <tr>
+            <th>Logros personales</th>
+            <td>4to lugar en la Olimpiada nacional de biología</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h2 id="academicos">Datos académicos</h2>
+        <ul>
+          <li>Egresado del Colegio Calasanz de Cúcuta</li>
+          <li>Estudiante en la Universidad de los Andes de los siguientes programas:</li>
+          <ul>
+            <li>Ingeniería de Sistemas y Computación</li>
+            <li>Ingeniería Biomédica</li>
+          </ul>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="intereses">Sitios de interés</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lTw20-gAL2U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qTHBaqNQZyA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ziClMd_dgFw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XtaEnxG2lbg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p><a href="https://www.chess.com">Sitio en el que juego ajedrés</a></p>
+        <p><a href="https://mangadex.org">Sitio en el que leo manga</a></p>
+
+        <picture>
+          <img src="data/pekora.jpeg" alt="Pekora meme">
+        </picture>
+        <picture>
+          <source media="(max-width: 1200px)" srcset="data/hololive600.jpg">
+          <source media="(min-width: 1200px)" srcset="data/hololive.jpeg">
+          <img src="data/hololive.jpeg" alt="All the hololive members">
+        </picture>
+      </section>
+
+      <section>
+        <h2 id="formulario">Formulario de contacto</h2>
+        <form action="/contacto" method="post">
+          <div>
+            <div>
+              <label for="nombre">Nombre:</label><br>
+              <input type="text" id="nombre" name="nombre_usuario">
+            </div>
+            <div>
+              <label for="mail">E-mail:</label><br>
+              <input type="email" id="mail" name="email_usuario">
+            </div>
+            <div>
+              <label for="msj">Mensaje:</label><br>
+              <textarea id="msj" name="mensaje_usuario"></textarea>
+            </div>
+            <div>
+              <button type="submit">Enviar mensaje</button>
+            </div>
+          </div>
+         </form>
+      </section>
+    </main>
+
+    <hr>
+
+    <!--Pie de página-->
+    <footer>
+      <a href="https://twitter.com/JJaimes480">
+        <img src="data/twitter-logo.png" alt="Logo de Twitter" width="50" height="50">
+      </a>
+      <a href="https://www.instagram.com/azmodes/">
+        <img src="data/instagram-logo.png" alt="Logo de Intagram" width="50" height="49">
+      </a>
+      <a href="https://myanimelist.net/profile/Azmodes">
+        <img src="data/mal-logo.png" alt="Logo de MyAnimeList" width="50" height="50">
+      </a>
+    </footer>
+
+  </body>
+</html>

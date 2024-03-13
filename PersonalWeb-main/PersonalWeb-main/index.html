@@ -1,0 +1,277 @@
+<!-- Revisión realizada por Martin Galvan
+
+    -Las secciones de la pagina se encuentran diferenciadas (header, main, footer). No hizo uso de
+     los tags section y article
+
+    -El código es legible, se encuentra correctamente indentado y los identificadores y clases de los
+     elementos son descriptivos
+
+    -La navegación a través del sitio web es entendible.
+
+    -Se encuentran errores mínimos en la validación
+-->
+<!-- Revisión realizada por Leonel Polanía
+    - El código es legible y se encuentra indentado. Los nombres de ids y clases son significativos.
+    - Las secciones header main y footer se encuentran diferenciadas. No se hizo uso de section ni article.
+    - El diseño estético de la página es agradable
+    - La navegación es consistente, la página es responsive
+    - Existen errores de validación en la etiqueta <a> mailto: no debe tener espacio.
+ -->
+<!-- Revisión realizada por Lina Cardozo
+    
+Comentario 1: El código está bien indentado en su mayoría, pero aconsejo usar
+Prettier para que al ir guardando los cambios, Prettier acomode e indente el
+código de la forma más óptima.
+
+Comentario 2: Las secciones lógicas de la página están bien diferenciadas (banner,
+menú de navegación, contenido y footer). Así mismo, dentro del contenido está la
+información sobre la persona, proyectos realizados, intereses / hobbies / habilidades,
+y formación académica y experiencia.
+
+Sugerencia: Fijar el menú en la parte superior de la página para que así vaya bajando,
+pueda seguir navegando a través de este por las secciones de la página.
+
+Comentario 3: El código es válido. Solamente falta quitar los espacios incorrectos
+colocados en el valor 'mailto' de los atributos 'href' en los que aplique (ver resultados
+arrojados por el validador). -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="styles.css" rel="stylesheet" />
+
+    <title>Personal Web Page</title>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggler"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Hobbies">Hobbies</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="modal-header">
+      <img
+        class="mx-auto img-thumbnail rounded-circle img-fluid"
+        src="/img/selfie.jpg"
+        alt="Julian's selfie"
+      />
+      <h1 class="mx-auto text-center">Julián Eduardo Jaimes Castellanos</h1>
+    </header>
+
+    <main class="modal-body">
+      <div class="container">
+        <div class="row">
+          <h2 id="About">About me</h2>
+          <hr />
+          <p>
+            Hello, my name is Julián Jaimes. I'm currently a Systems Engineering
+            and Biomedical Engineering student at University of Los Andes. Here
+            is my <a href="https://github.com/jejaimes">Github</a>,
+            <a href="https://twitter.com/JJaimes480">Twitter</a> and
+            <a href="https://www.instagram.com/azmodes/">Instagram</a>. Also my
+            personal email is
+            <a href="mailto: julian.jaimes480@gmail.com"
+              >julian.jaimes480@gmail.com</a
+            >
+            and my instutional email is
+            <a href="mailto: je.jaimes@uniandes.edu.co"
+              >je.jaimes@uniandes.edu.co</a
+            >. You can contact me in any of my social media or with the emails.
+          </p>
+        </div>
+        <div class="row">
+          <h2 id="Projects">Projects</h2>
+          <hr />
+          <h3>Action potential of a neuron</h3>
+          <div class="ratio-16x9 ratio">
+            <iframe
+              src="https://www.youtube.com/embed/v0lVXF5raa8"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p>
+            In this project my group implemented 6 algorithms and a visual
+            interface to solve the differential equation model of Hodgkin-Huxley
+            and aproximate the neuron potential. For this project I did the
+            implementation of 5 of the algorithms and the plot of the action
+            potential. You can visit the project
+            <a href="https://github.com/0Jhoel/proyecto_final_prog_cientifica"
+              >here</a
+            >.
+          </p>
+          <h3>AlohAndes</h3>
+          <p>
+            For this project we implemented a relational database in Oracle for
+            an accommodation business. Furthermore, we implemented a Java
+            application that communicated using SQL with the database and with
+            CRUD functionality to interact with the database. You can visit the
+            project
+            <a href="https://github.com/jejaimes/Iteracion2-Sistrans">here</a>.
+          </p>
+        </div>
+
+        <div class="row">
+          <h2 id="Education">Education and Experience</h2>
+          <hr />
+          <p>
+            I am currently doing my 7th semester at University of Los Andes. I
+            am studying Systems Engineering and Biomedical Engineering. Besides,
+            i don't have any professional experience yet.
+          </p>
+          <h3>Technical Skills</h3>
+          <ul class="mx-5">
+            <li>Python</li>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>Javascript</li>
+            <li>HTML & CSS</li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <h2 id="Hobbies">Hobbies</h2>
+          <hr />
+          <h3>Music</h3>
+          <p>
+            I come from a family of musicians. So, naturally, when I was a
+            child, I started to learn how to play the tiple. The tiple is the
+            national instrument of Colombia. It is similar to a guitar and has
+            12 strings arranged in groups of 3, the 4 groups are tuned like the
+            upper four strings of the modern guitar: D G B E. You can learn more
+            about it <a href="https://en.wikipedia.org/wiki/Tiple">here</a>.
+            Moreover here are two videos of me and my uncle playing it.
+          </p>
+          <p>
+            This one is a song made by my grandfather to one of his grandchilds.
+          </p>
+          <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/5g872xVhp4s"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <p>And this one is a popular choro from Brazil.</p>
+          <div class="ratio ratio-16x9">
+            <iframe
+              class="ratio ratio-16x9"
+              src="https://www.youtube.com/embed/tAYeZK3UDnI"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <h3>Chess</h3>
+          <p>
+            This is a new hobbie I picked at the start of the quarantine. I had
+            already learned how the pieces move when I was I child, but didn't
+            know some of the principles of the game. Initially I started playing
+            chess beacuse I watched some of my favorite streamers at the time
+            trying it out. Then I started watching videos and streams of
+            <a href="https://www.youtube.com/c/GMHikaru/featured"
+              >GM Hikaru Nakamura</a
+            >
+            and
+            <a href="https://www.youtube.com/c/GothamChess/featured"
+              >Gotham Chess</a
+            >. Those two channels really got me into playing a lot of it.
+            Lastly, here is my
+            <a href="https://www.chess.com/member/azmodes"
+              >profile in Chess.com</a
+            >, add me if you wanna play sometime.
+          </p>
+
+          <h3>Manga</h3>
+          <p>
+            When I started highschool, I discoverd the world of anime. As I
+            began to learn more about it, I came across manga. And learned that
+            most of the anime I watched were based on some mangas with the same
+            names. Since then I slowly stop watching animes to instead read the
+            mangas. Now I don't really watch anime anymore but read a lot of
+            mangas. Here are some of my favorites.
+          </p>
+          <div class="row text-center">
+            <div class="col-6">
+              <a href="https://myanimelist.net/manga/103701/Beastars">
+                <img
+                  class="img-fluid img-thumbnail"
+                  src="img/beastars.jpg"
+                  alt="Cover of volume 1 of Beastars"
+                />
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="https://myanimelist.net/manga/116778/Chainsaw_Man">
+                <img
+                  class="img-fluid img-thumbnail"
+                  src="img/chainsawman.jpg"
+                  alt="Cover of volume 1 of Chainsaw Man"
+                />
+              </a>
+            </div>
+          </div>
+          <p>
+            Also, <a href="https://myanimelist.net/profile/Azmodes">here</a> is
+            my MyAnimeList profile if you want to know more about what I read.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="modal-footer">
+      <p><strong>Julián Eduardo Jaimes Castellanos</strong></p>
+      <div>
+        <a href="https://twitter.com/JJaimes480"
+          ><img
+            class="img-thumbnail rounded-circle"
+            src="img/twitter-logo.png"
+            alt="Twitter logo"
+        /></a>
+        <a href="https://www.instagram.com/azmodes/"
+          ><img
+            class="rounded-circle"
+            src="img/instagram-logo.png"
+            alt="Instagram logo"
+        /></a>
+        <a href="https://github.com/jejaimes"
+          ><img class="rounded-cirlce" src="img/github.png" alt="Github logo"
+        /></a>
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "name",
+    "type": "text",
+    "placeholder": "Your name",
+    "verify": {
+      "required": true,
+      "min": 3,
+      "max": 30
+    }
+  },
+  {
+    "name": "Email",
+    "type": "email",
+    "placeholder": "email@example.com",
+    "verify": {
+      "required": true
+    }
+  },
+  {
+    "name": "Password",
+    "type": "password",
+    "placeholder": "",
+    "verify": {
+      "required": true,
+      "min": 3,
+      "max": 30
+    }
+  },
+  {
+    "name": "Telephone",
+    "type": "tel",
+    "placeholder": "+573333333333",
+    "verify": {
+      "required": true,
+      "min": 3,
+      "max": 30
+    }
+  },
+  {
+    "name": "Over 18",
+    "type": "checkbox"
+  }
+]

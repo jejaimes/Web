@@ -1,0 +1,40 @@
+/*
+    Revision realizada por Martin Galvan
+
+    -El codigo esta identado y es legible correctamente
+    -Las reglas CSS estan bien definidas y son descriptivas
+    -La consistencia del estilo se puede ver en toda la pagina
+    
+*/
+/*
+    Revisión realizada por Leonel Polanía
+
+    - El código es legible y se encuentra identado
+    - Las reglas css se encuentran bien definidas
+
+ */
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css";
+
+.navbar {
+    background-color: gray;
+}
+
+p {
+    text-align: justify;
+}
+
+h3 {
+    color: grayscale($color: #464141);
+}
+
+header {
+    background-color: #F2F2F2;
+}
+
+body {
+    background-color: white;
+}
+
+footer {
+    background-color: #D9D9D9;
+}
